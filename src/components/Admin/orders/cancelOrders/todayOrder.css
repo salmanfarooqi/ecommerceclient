@@ -1,0 +1,32 @@
+.CancelOrders-wraper{
+
+    display:flex;
+    /* margin: 50px; */
+    margin: 30px 10px;
+
+    
+}
+
+.CancelOrders-wraper .card{
+
+    background-color:cyan;
+    width: 330px;
+    height:200px;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0,0,0.06);
+
+}
+
+
+.CancelOrders-wraper .card .card-content{
+
+    margin: 20px;
+}
+
+.CancelOrders-wraper .card img{
+
+    width: 100px;
+    height: 100px;
+
+
+}

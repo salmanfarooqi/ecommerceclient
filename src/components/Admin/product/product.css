@@ -1,0 +1,78 @@
+.product-wraper {
+    margin: 0; /* Making it full width with no margin */
+    background-color: #f5f5f5;
+    padding: 50px 130px; 
+    height: 100vh;
+}
+
+.product-wraper .add-product button
+ {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    position: absolute; /* Fixes the button to a specific position in the viewport */
+    top: 200px;       /* Positioning it to top-left */
+    left: 1100px;
+    z-index: 10;     /* Ensures it stays on top of other elements */
+}
+
+.product-wraper .add-product button:hover
+{
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.product-wraper .product-table table {
+    width: 100%; /* Table taking full width of its container */
+    border: 1px solid gray;
+    margin-bottom: 300px;
+    border-collapse: collapse;
+    margin-left: 200px;
+}
+
+.product-table thead {
+    background-color: #2c3e50;
+    color: white;
+    width: fit-content;
+}
+
+.product-wraper .product-table th {
+    padding: 12px 20px;
+    border-bottom: 2px solid #34495e;
+}
+
+.product-table tbody td {
+    padding: 10px 0px  0px 0px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .product-wraper {
+        padding: 20px 10px;
+    }
+
+    .product-wraper .add-product button,
+    .product-wraper .addproduct button {
+        top: 5px;
+        left: 5px;
+        padding: 8px 16px; /* A little smaller on mobile */
+    }
+
+    .product-wraper .product-table th, 
+    .product-table tbody td {
+        padding: 5px 10px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) {
+    .product-wraper {
+        padding: 30px 50px;
+    }
+}

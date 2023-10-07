@@ -1,0 +1,101 @@
+.signup-wraper {
+    border: 1px solid #ccE7d0;
+    margin: 30px 30%;
+    width: 450px;
+    height: 500px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.02);
+    border-radius: 10px;
+}
+
+.signup-wraper .forms {
+    color: #333;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.02);
+}
+
+.signup-wraper .input-box {
+    height: 52px;
+    margin: 60px 50px;
+}
+
+.signup-wraper .forms .input-box input {
+    display: flex;
+    padding: 0px 16px;
+    margin: 18px 0px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1.5px solid #C7BEBE;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.forms button {
+    width: 350px;
+    margin: 20px 12px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #4070f4;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2 > div {
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.forms .input-box h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    font-weight: 100;
+    width: 100%;
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+
+.forms .input-box h2 .signup:hover {
+    text-decoration: underline 2px;
+    cursor: pointer;
+    color: #0eb4f1;
+}
+
+/* Tablet devices (typically screens 768px and up but less than 1024px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .signup-wraper {
+        width: 80%;
+        margin: 30px 10%;
+    }
+
+    .signup-wraper .forms button {
+        width: 90%;
+        margin: 20px 5%;
+    }
+}
+
+/* Mobile devices (typically screens below 768px) */
+@media (max-width: 768px) {
+    .signup-wraper {
+        width: 70%;
+        margin: 30px 5%;
+    }
+
+    .signup-wraper .input-box {
+        margin: 30px 25px;
+        /* background-color: red; */
+        /* width:250px; */
+    }
+
+    .signup-wraper .forms button {
+        width: 40%;
+        /* margin: 20px 10%; */
+    }
+}

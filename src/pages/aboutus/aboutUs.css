@@ -1,0 +1,76 @@
+/* Styling for AboutUs component */
+
+.header-image {
+    position: relative; /* This will be the container for positioning text over the image */
+    width: 100%;
+    overflow: hidden; /* This will clip any content that spills out of the container */
+    max-height: 400px; /* or whatever height you want */
+}
+
+.header-image img {
+    width: 100%; /* Ensures the image fills the container */
+    display: block; /* Removes any bottom spacing */
+}
+
+/* .header-image h1 {
+    position: absolute; /* Position the text over the image */
+    /* bottom: 20px; /* A space from the bottom */
+    /* left: 50px;
+    color: white; /* Assumes your image is darker so white will be visible */
+    /* background-color: rgba(0, 0, 0, 0.5); /* Gives a semi-transparent background for better visibility */
+    /* padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    /* font-size: 1.5rem; */ 
+  
+/* }  */ 
+
+
+
+
+.bottom-section {
+    display: flex; /* Make children sit side by side */
+    gap: 20px; /* A spacing between them */
+    padding: 20px 0;
+    align-items: center; /* Center content vertically */
+}
+
+.bottom-section .image {
+    flex: 1; /* Takes up equal width as .text */
+}
+
+.bottom-section .image img {
+    width: 100%; /* Fill the container */
+    border-radius: 100%; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+.bottom-section .text {
+    flex: 2; /* Takes up double the width of .image */
+    padding: 20px;
+}
+
+.bottom-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.bottom-section h2 {
+    font-size: 1rem;
+    line-height: 1.6; /* Spacing between lines */
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .bottom-section {
+        flex-direction: column; /* Stack children vertically */
+    }
+
+    .bottom-section .image,
+    .bottom-section .text {
+        flex: none; /* Reset flex to default */
+    }
+
+    .header-image {
+        max-height: 250px; /* A smaller height for smaller screens */
+    }
+}

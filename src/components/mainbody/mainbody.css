@@ -1,0 +1,11 @@
+.container{
+
+    margin: 100px;
+}
+
+.cards{
+    display: flex;
+    /* background-color: black; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

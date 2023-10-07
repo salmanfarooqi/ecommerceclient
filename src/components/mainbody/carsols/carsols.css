@@ -1,0 +1,65 @@
+/* HeroSection.css */
+
+.hero {
+  margin: 10px 20px;
+  background-image: url('./images/lady.jpg');
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #ffffff; /* Adjust for better visibility depending on your background image */
+  max-width: 80%;
+  font-size: 30px;
+}
+
+.shop-now-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: gray;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background-color: green; /* Slightly different shade for hover effect */
+}
+
+/* Tablet devices (typically screens 768px and up) */
+@media (max-width: 1024px) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero-content {
+    font-size: 25px;
+  }
+
+  .shop-now-btn {
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile devices (typically screens below 768px) */
+@media (max-width: 767px) {
+  .hero {
+    margin: 5px 10px;
+    height: 300px;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    font-size: 20px;
+  }
+
+  .shop-now-btn {
+    padding: 5px 10px;
+  }
+}

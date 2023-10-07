@@ -1,0 +1,136 @@
+.product-wraper{
+
+    display: flex;
+    align-items: center;
+    margin:30px;
+    
+   
+}
+.product-wraper .productDetail-section{
+
+    margin-left:50px;
+    /* position: relative; */
+    /* bottom: 120px; */
+    /* box-shadow:5px 5px 5px gray ; */
+    /* background-color: aqua; */
+}
+.product-wraper .productDetail-section select{
+
+    width: 70px;
+    height:30px;
+    margin-top: 10px;
+}
+.productDetail-section .product-name{
+
+    font-size: 30px;
+    color:yellowgreen;
+}
+
+.product-wraper .image-section .main-image{
+
+    /* background-color:green ; */
+    /* margin-bottom: 100px; */
+    background-color:#cce7d0;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    /* margin-top: 20px; */
+    /* height: 400px; */
+      width: 100%;
+
+}
+.product-wraper .image-section .main-image img{
+    /* position: relative; */
+    bottom: 130px;
+    width: 550px;
+    height: 500px;
+    box-shadow:1px 1px 1px gray ;
+    border-radius: 20px ;
+
+
+}
+
+
+.cart-section{
+
+    margin-top: 10px;
+    
+}
+.cart-section input{
+
+    width: 50px;
+}
+.cart-section button{
+
+    background-color: green;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-left:100px;
+    margin-top: 20px;
+    font-size: 24px;
+    color:white;
+    /* font-weight: 600px; */
+    border: none;
+    cursor: pointer;
+    width: 200px;
+}
+.productDetail-section h1{
+
+    margin-left:80px;
+    margin-top: 20px;
+   
+    /* border-bottom: 2px solid wheat; */
+     color:green;
+     font-size: 30px;
+    
+}
+
+.productDetail-section h2{
+
+    font-size: 20px;
+}
+.product-name{
+
+    font-size:20px;
+    color:gray;
+    /* border-bottom: 2px solid gray; */
+}
+
+.product-wraper .productDetail-section .product-description{
+
+
+    /* margin:20 500px; */
+    /* color:yellow */
+
+    margin:20px 100px;
+    max-width: 800px;
+}
+
+
+/* responsiveness */
+
+
+@media only screen and (max-width: 768px) {
+    .product-wraper {
+        flex-direction: column;  /* Stacking product image and details vertically */
+        margin: 15px; 
+    }
+    .product-wraper .productDetail-section {
+        margin-left: 0;
+        text-align: center;
+    }
+    .product-wraper .image-section .main-image img {
+        width: 300px;
+        height: 300px;  /* Adjusting image dimensions for mobile */
+        bottom: 0;
+    }
+    .cart-section button {
+        margin-left: 0;
+        width: 100%;
+    }
+    .productDetail-section h1, .productDetail-section h2 {
+        margin-left: 0;
+    }
+    .product-wraper .productDetail-section .product-description {
+        margin: 15px;  /* Reducing margins for mobile */
+        max-width: 100%;
+    }
+}

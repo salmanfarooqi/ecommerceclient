@@ -1,0 +1,8 @@
+.main-wraper .main-cards{
+
+    display:flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    /* width:auto; */
+}
+

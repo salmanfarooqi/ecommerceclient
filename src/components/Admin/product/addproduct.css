@@ -1,0 +1,90 @@
+.addproduct-wraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Fill the height of the viewport */
+    /* background-color: #f3f4f6; A soft background color */
+    margin:30px 150px;
+}
+
+.addproduct-wraper .product {
+    padding: 20px;
+    background-color: #fff; /* White background for contrast */
+    border: 1px solid #e0e0e0; /* Neutral border color */
+    border-radius: 10px; /* Soft rounding of corners */
+    width: 60%; /* Responsive width */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.addproduct-wraper input,
+.addproduct-wraper textarea {
+    width: 100%; /* Fill the width */
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #dcdcdc; /* Neutral border color */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Make sure padding doesn't increase the size */
+}
+
+.addproduct-wraper label {
+    font-weight: bold;
+    margin-bottom:3px;
+    display: block; /* Make label take the entire width */
+    width: 300px;
+    color:gray;
+}
+
+.addproduct-wraper button {
+    background-color: #007BFF; /* A strong blue color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* White text color */
+    cursor: pointer; /* Indicates an action */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.addproduct-wraper button:hover {
+    background-color: #0056b3; /* Darken on hover */
+}
+
+/* If you'd like to style the error messages */
+.addproduct-wraper .error {
+    color: #d9534f; /* A noticeable red */
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* responsivenss */
+
+
+/* Mobile devices */
+@media only screen and (max-width: 576px) {
+    .addproduct-wraper {
+        margin: 20px 10px;  /* Reduced margins for smaller screens */
+    }
+
+    .addproduct-wraper .product {
+        width: 90%;  /* Take almost full width on mobiles for better use of space */
+    }
+
+    .addproduct-wraper label {
+        width: 100%;  /* Allow labels to take full width on mobile */
+    }
+}
+
+/* Tablet devices */
+@media (min-width: 577px) and (max-width: 1024px) {
+    .addproduct-wraper {
+        margin: 25px 50px;  /* Slightly increased margin compared to mobile */
+    }
+
+    .addproduct-wraper .product {
+        width: 80%;  /* Slightly reduce width for tablets */
+    }
+}
+
+/* Laptop and above will use the original styles */
+

@@ -1,0 +1,29 @@
+.cancelorderwraper table{
+
+
+       padding:70px;
+       /* background-color: gray; */
+
+
+       
+
+
+}
+.cancelorderwraper table thead{
+
+     /* background-color: gray; */
+     /* border-top:1px solid green;      */
+     /* background-color: aqua; */
+}
+.cancelorderwraper th{
+
+    /* margin-left:100px; */
+    /* background-color: yellow; */
+   
+}
+
+.cancelorderwraper td{
+
+    padding-left:30px;
+    padding-top:20px;
+}
